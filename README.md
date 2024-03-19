@@ -1,30 +1,65 @@
-# Sistema de Sugest�es Inteligentes
+# Projeto Amigo Secreto
 
-![Sistema de Sugest�es Inteligentes](https://i.imgur.com/kUIvsbE.png)
+O Projeto Amigo Secreto é um sistema de gerenciamento de amigo secreto desenvolvido em SQL. Ele permite criar e gerenciar participantes, listas de desejos e sorteios para eventos de amigo secreto.
 
-## Sobre o Projeto
+## Estrutura do Banco de Dados
 
-Nossa API! Agora, voc� pode compartilhar suas ideias valiosas de forma r�pida e eficiente. Simplificamos o processo de coleta, avalia��o e sele��o das melhores sugest�es, para impulsionar a inova��o em nossa empresa. Al�m disso, oferecemos um sistema de cadastro seguro para acesso exclusivo. Junte-se a n�s e fa�a a diferen�a!
+O sistema utiliza um banco de dados relacional com as seguintes tabelas:
 
-## Contribuindo
+### Tabela `listadesejos`
 
-Contribui��es s�o sempre bem-vindas! Aqui est�o as maneiras pelas quais voc� pode contribuir:
+Esta tabela armazena os itens da lista de desejos de cada participante.
 
-- [Reportando bugs](https://github.com/luansilvadb/UniaraxaAPI/issues)
-- [Sugerindo melhorias](https://github.com/luansilvadb/UniaraxaAPI/issues)
+- `id`: Identificador único do item (BIGSERIAL)
+- `nome`: Nome do item (varchar(255))
+- `descricao`: Descrição do item (varchar(255))
+- `id_participante`: Identificador do participante ao qual o item pertence (int8)
 
-### Reportando Bugs
+### Tabela `login`
 
-Para reportar um bug, abra uma nova issue, descreva o bug e adicione as labels necess�rias.
+Nesta tabela são registrados os dados de login dos participantes.
 
-### Sugerindo melhorias
+- `id`: Identificador único do login (BIGSERIAL)
+- `nome`: Nome do participante (varchar(255))
+- `email`: Endereço de e-mail do participante (varchar(255))
+- `senha`: Senha do participante (varchar(255))
 
-Para sugerir melhorias, abra uma nova issue, descreva sua sugest�o e adicione as labels necess�rias.
+### Tabela `participante`
 
-## Licen�a
+A tabela `participante` armazena informações detalhadas sobre cada participante.
 
-Distribu�do sob a licen�a MIT. Veja `LICENSE` para mais informa��es.
+- `id`: Identificador único do participante (BIGSERIAL)
+- `nome`: Nome do participante (varchar(255))
+- `email`: Endereço de e-mail do participante (varchar(255))
+- `senha`: Senha do participante (varchar(255))
+- `id_login_service`: Identificador do serviço de login associado ao participante (int8)
 
-## Contato
+### Tabela `sorteio`
 
-Luan - luan.videira@gmail.com
+Esta tabela registra os resultados dos sorteios, incluindo a data em que foram realizados.
+
+- `id`: Identificador único do sorteio (BIGSERIAL)
+- `data_sorteio`: Data em que o sorteio foi realizado (date)
+- `id_participante_sorteado`: Identificador do participante sorteado (int8)
+
+## Relacionamentos
+
+O banco de dados possui as seguintes restrições de chave estrangeira (FK):
+
+- `FKlistadesej52748`: Chave estrangeira na tabela `listadesejos` referenciando `participante(id)`
+- `FKparticipan215456`: Chave estrangeira na tabela `participante` referenciando `login(id)`
+- `FKsorteio203699`: Chave estrangeira na tabela `sorteio` referenciando `participante(id)`
+
+## Funcionalidades
+
+- **Cadastro de Participantes**: Os participantes podem se cadastrar no sistema fornecendo nome, e-mail e senha.
+- **Gerenciamento de Listas de Desejos**: Cada participante pode criar uma lista de desejos, adicionando itens com nome e descrição.
+- **Realização de Sorteios**: O sistema realiza sorteios automaticamente para determinar quem deve presentear quem em um evento de amigo secreto.
+
+## Contribuição
+
+Contribuições são bem-vindas! Se você deseja contribuir para o projeto Amigo Secreto, sinta-se à vontade para abrir um pull request ou criar uma issue para discutir novas funcionalidades, correções de bugs ou melhorias.
+
+## Licença
+
+Este projeto é distribuído sob a [Licença MIT](LICENSE).
