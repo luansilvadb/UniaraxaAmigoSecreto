@@ -4,43 +4,9 @@ O Projeto Amigo Secreto é um sistema de gerenciamento de amigo secreto desenvol
 
 ## Estrutura do Banco de Dados
 
-O sistema utiliza um banco de dados relacional com as seguintes tabelas:
+A estrutura do banco de dados é ilustrada abaixo:
 
-### Tabela `listadesejos`
-
-Esta tabela armazena os itens da lista de desejos de cada participante.
-
-- `id`: Identificador único do item (BIGSERIAL)
-- `nome`: Nome do item (varchar(255))
-- `descricao`: Descrição do item (varchar(255))
-- `id_participante`: Identificador do participante ao qual o item pertence (int8)
-
-### Tabela `login`
-
-Nesta tabela são registrados os dados de login dos participantes.
-
-- `id`: Identificador único do login (BIGSERIAL)
-- `nome`: Nome do participante (varchar(255))
-- `email`: Endereço de e-mail do participante (varchar(255))
-- `senha`: Senha do participante (varchar(255))
-
-### Tabela `participante`
-
-A tabela `participante` armazena informações detalhadas sobre cada participante.
-
-- `id`: Identificador único do participante (BIGSERIAL)
-- `nome`: Nome do participante (varchar(255))
-- `email`: Endereço de e-mail do participante (varchar(255))
-- `senha`: Senha do participante (varchar(255))
-- `id_login_service`: Identificador do serviço de login associado ao participante (int8)
-
-### Tabela `sorteio`
-
-Esta tabela registra os resultados dos sorteios, incluindo a data em que foram realizados.
-
-- `id`: Identificador único do sorteio (BIGSERIAL)
-- `data_sorteio`: Data em que o sorteio foi realizado (date)
-- `id_participante_sorteado`: Identificador do participante sorteado (int8)
+![Estrutura do Banco de Dados](https://i.imgur.com/UDVN4Te.png)
 
 ## Relacionamentos
 
