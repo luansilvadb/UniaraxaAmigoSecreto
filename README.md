@@ -1,29 +1,29 @@
-# Sistema de Sugestões Inteligentes
+# Sistema de Sugestï¿½es Inteligentes
 
-![Sistema de Sugestões Inteligentes](https://i.imgur.com/ZRZJlpw.png)
+![Sistema de Sugestï¿½es Inteligentes](https://i.imgur.com/kUIvsbE.png)
 
 ## Sobre o Projeto
 
-Nossa API! Agora, você pode compartilhar suas ideias valiosas de forma rápida e eficiente. Simplificamos o processo de coleta, avaliação e seleção das melhores sugestões, para impulsionar a inovação em nossa empresa. Além disso, oferecemos um sistema de cadastro seguro para acesso exclusivo. Junte-se a nós e faça a diferença!
+Nossa API! Agora, vocï¿½ pode compartilhar suas ideias valiosas de forma rï¿½pida e eficiente. Simplificamos o processo de coleta, avaliaï¿½ï¿½o e seleï¿½ï¿½o das melhores sugestï¿½es, para impulsionar a inovaï¿½ï¿½o em nossa empresa. Alï¿½m disso, oferecemos um sistema de cadastro seguro para acesso exclusivo. Junte-se a nï¿½s e faï¿½a a diferenï¿½a!
 
 ## Contribuindo
 
-Contribuições são sempre bem-vindas! Aqui estão as maneiras pelas quais você pode contribuir:
+Contribuiï¿½ï¿½es sï¿½o sempre bem-vindas! Aqui estï¿½o as maneiras pelas quais vocï¿½ pode contribuir:
 
 - [Reportando bugs](https://github.com/luansilvadb/UniaraxaAPI/issues)
 - [Sugerindo melhorias](https://github.com/luansilvadb/UniaraxaAPI/issues)
 
 ### Reportando Bugs
 
-Para reportar um bug, abra uma nova issue, descreva o bug e adicione as labels necessárias.
+Para reportar um bug, abra uma nova issue, descreva o bug e adicione as labels necessï¿½rias.
 
 ### Sugerindo melhorias
 
-Para sugerir melhorias, abra uma nova issue, descreva sua sugestão e adicione as labels necessárias.
+Para sugerir melhorias, abra uma nova issue, descreva sua sugestï¿½o e adicione as labels necessï¿½rias.
 
-## Licença
+## Licenï¿½a
 
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+Distribuï¿½do sob a licenï¿½a MIT. Veja `LICENSE` para mais informaï¿½ï¿½es.
 
 ## Contato
 
