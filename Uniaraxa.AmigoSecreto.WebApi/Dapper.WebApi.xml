@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Uniaraxa.AmigoSecreto.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Uniaraxa.AmigoSecreto.WebApi.Program">
+            <summary>
+            Classe principal que contém o ponto de entrada para a execução do aplicativo.
+            </summary>
+        </member>
+        <member name="M:Uniaraxa.AmigoSecreto.WebApi.Program.Main(System.String[])">
+            <summary>
+            Ponto de entrada para a execução do aplicativo.
+            </summary>
+            <param name="args">Os argumentos da linha de comando.</param>
+        </member>
+        <member name="M:Uniaraxa.AmigoSecreto.WebApi.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Cria um construtor de host para configurar e iniciar o aplicativo.
+            </summary>
+            <param name="args">Os argumentos da linha de comando.</param>
+            <returns>O construtor de host.</returns>
+        </member>
+        <member name="T:Uniaraxa.AmigoSecreto.WebApi.Startup">
+            <summary>
+            Classe respons�vel por configurar a inicializa��o da aplica��o.
+            </summary>
+        </member>
+        <member name="M:Uniaraxa.AmigoSecreto.WebApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Construtor da classe Startup.
+            </summary>
+            <param name="configuration">A configura��o da aplica��o.</param>
+        </member>
+        <member name="P:Uniaraxa.AmigoSecreto.WebApi.Startup.Configuration">
+            <summary>
+            Obt�m ou define a configura��o da aplica��o.
+            </summary>
+        </member>
+        <member name="M:Uniaraxa.AmigoSecreto.WebApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configura os serviços do aplicativo.
+            </summary>
+            <param name="services">A cole��o de servi�os.</param>
+        </member>
+        <member name="M:Uniaraxa.AmigoSecreto.WebApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configura o pipeline de requisi��o HTTP.
+            </summary>
+            <param name="app">O objeto IApplicationBuilder.</param>
+            <param name="env">O ambiente de hospedagem web.</param>
+        </member>
+    </members>
+</doc>
